@@ -31,6 +31,12 @@ id="messageSource">
 <property name="basename" value="messages" /> 
 </bean>
 
+<bean id="multipartResolver"
+      class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+
+
+<mvc:resources mapping="/uploads/**" location="file:/D:/uploads/"/>
+
 
 
 </beans>
