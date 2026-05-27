@@ -1,5 +1,7 @@
 package com.spring.model;
 
+import java.util.List;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -22,5 +24,16 @@ public class StudentBean {
 	@Range(max = 70, min = 18	)
 	@NotNull
 	private Integer age;
+	
+	
+	  private String password;
+	  private String address;
+	  private boolean newsletter;
+	  private List<String> frameworks;
+	  private String gender;
+	  private Integer favNumber;
+	  
+	  private String country;
+	  private List<String>  skills;
 
 }
